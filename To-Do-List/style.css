@@ -4,6 +4,7 @@ body {
     margin: 20px;
 
 }
+
 #taskInput {
     padding: 8px;
     width: 200px;
@@ -13,6 +14,7 @@ body {
     outline: none;
 
 }
+
 #taskList {
     list-style-type: none;
     padding: 0;
@@ -21,6 +23,7 @@ body {
     text-align: left;
 
 }
+
 li {
     padding: 8px;
     margin: 5px 0;
@@ -28,6 +31,7 @@ li {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .completed {
     text-decoration: line-through;
     color: gray;
