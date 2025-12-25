@@ -6,6 +6,7 @@
     <title>Log in Page</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
+
 <body ng-controller="LoginController">
     <h2>Log In</h2>
     <form ng-submit="log-in()">
@@ -22,7 +23,21 @@
     </form>
 
     <script>
-        
+        var app = angular.module('loginApp', []);
+        app.controller('LoginController', function($scope) {
+            $scope.user = {
+                name: '',
+                email: '',
+                password: ''
+            };
+
+            $scope.login = function() {
+                alert('Logging in with:\n' +
+                      'Name: ' + $scope.user.name + '\n' +
+                      'Email: ' + $scope.user.email + '\n' +
+                      'Password: ' + $scope.user.password);
+            };
+        }); 
     </script>
     
 </body>
