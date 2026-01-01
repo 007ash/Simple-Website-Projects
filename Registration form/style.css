@@ -1,0 +1,101 @@
+:root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --text: #f8fafc;
+    --error: #ef4444;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top right, #1e1b4b, var(--bg));
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.6s ease-out;
+}
+
+h2 { margin-bottom: 0.5rem; text-align: center; font-size: 1.8rem; }
+.subtitle { text-align: center; color: #94a3b8; margin-bottom: 2rem; font-size: 0.9rem; }
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #334155;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Floating Label Logic */
+.input-group label {
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    color: #94a3b8;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -1.2rem;
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.input-group input:focus {
+    border-color: var(--primary);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.error-msg {
+    color: var(--error);
+    font-size: 0.75rem;
+    display: none;
+    margin-top: 0.25rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
