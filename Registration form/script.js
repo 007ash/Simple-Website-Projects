@@ -6,10 +6,9 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const email = document.getElementById('email');
     const password = document.getElementById('password');
 
-    // Simple Email Regex
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Reset errors
+
     document.querySelectorAll('.error-msg').forEach(el => el.style.display = 'none');
 
     if (username.value.length < 3) {
@@ -29,7 +28,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
     if (isValid) {
         alert('Registration Successful! 🚀');
-        // You would typically send data to a server here
+        
     }
 });
 
