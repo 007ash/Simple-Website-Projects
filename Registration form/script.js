@@ -1,14 +1,12 @@
 document.getElementById('registrationForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     let isValid = true;
     const username = document.getElementById('username');
     const email = document.getElementById('email');
     const password = document.getElementById('password');
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-
     document.querySelectorAll('.error-msg').forEach(el => el.style.display = 'none');
 
     if (username.value.length < 3) {
