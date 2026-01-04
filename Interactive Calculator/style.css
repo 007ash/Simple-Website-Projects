@@ -1,4 +1,7 @@
-* { box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+* { 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+}
 
 body {
     margin: 0;
@@ -34,8 +37,12 @@ button {
     transition: 0.2s;
 }
 
-button:hover { background: rgba(255, 255, 255, 0.25); }
-.span-two { grid-column: span 2; background: rgba(76, 175, 80, 0.3); }
+button:hover { 
+    background: rgba(255, 255, 255, 0.25); 
+}
+.span-two { 
+    grid-column: span 2; background: rgba(76, 175, 80, 0.3);
+}
 
 .output {
     grid-column: 1 / -1;
@@ -51,5 +58,12 @@ button:hover { background: rgba(255, 255, 255, 0.25); }
     margin-bottom: 10px;
 }
 
-.previous-operand { color: rgba(255, 255, 255, 0.5); font-size: 1rem; }
-.current-operand { color: white; font-size: 2rem; font-weight: bold; }
+.previous-operand { 
+    color: rgba(255, 255, 255, 0.5); 
+    font-size: 1rem; 
+}
+.current-operand { 
+    color: white; 
+    font-size: 2rem; 
+    font-weight: bold; 
+}
