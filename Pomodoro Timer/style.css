@@ -1,0 +1,83 @@
+:root {
+    --primary: #ff6b6b;
+    --bg: #0f172a;
+    --glass: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background: radial-gradient(circle at top right, #1e293b, var(--bg));
+    color: white;
+    font-family: 'Inter', system-ui, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.glass-container {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+.timer-display {
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 2rem 0;
+    font-variant-numeric: tabular-nums; /* Prevents text jumping */
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn.primary {
+    background: var(--primary);
+    font-weight: bold;
+}
+
+.mode-switch {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.mode-switch button {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.mode-switch button.active {
+    color: white;
+    background: var(--glass);
+    border-radius: 50px;
+}
