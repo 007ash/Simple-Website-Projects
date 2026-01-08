@@ -30,7 +30,7 @@ body {
     font-size: 5rem;
     font-weight: 800;
     margin: 2rem 0;
-    font-variant-numeric: tabular-nums; /* Prevents text jumping */
+    font-variant-numeric: tabular-nums;
 }
 
 .controls {
