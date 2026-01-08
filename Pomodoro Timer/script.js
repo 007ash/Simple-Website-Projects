@@ -7,7 +7,7 @@ class PomodoroTimer {
         this.resetButton = document.getElementById('reset');
 
         this.timerInterval = null;
-        this.timeLeft = 25 * 60; // 25 minutes in seconds
+        this.timeLeft = 25 * 60; 
         this.isRunning = false;
 
         this.init();
@@ -51,7 +51,6 @@ class PomodoroTimer {
     setMode(mode) {
         this.timeLeft = mode === 'work' ? 25 * 60 : 5 * 60;
         this.reset();
-        // UI toggle logic for buttons would go here
     }
 
     complete() {
@@ -60,5 +59,4 @@ class PomodoroTimer {
     }
 }
 
-// Initialize the timer
 const timer = new PomodoroTimer();
