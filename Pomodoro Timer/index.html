@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-container">
+        <h1>Focus</h1>
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        
+        <div class="controls">
+            <button id="start" class="btn primary">Start</button>
+            <button id="pause" class="btn">Pause</button>
+            <button id="reset" class="btn">Reset</button>
+        </div>
+
+        <div class="mode-switch">
+            <button onclick="timer.setMode('work')" class="active">Work</button>
+            <button onclick="timer.setMode('break')">Break</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
