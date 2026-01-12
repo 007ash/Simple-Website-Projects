@@ -6,7 +6,9 @@
     --border: rgba(255, 255, 255, 0.1);
 }
 
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box; 
+}
 
 body {
     margin: 0;
@@ -18,7 +20,6 @@ body {
     flex-direction: column;
 }
 
-/* Navbar Styling */
 .navbar {
     height: 60px;
     display: flex;
@@ -30,9 +31,11 @@ body {
     border-bottom: 1px solid var(--border);
 }
 
-.logo span { color: var(--accent); font-weight: bold; }
+.logo span { 
+    color: var(--accent); 
+    font-weight: bold; 
+}
 
-/* Editor Layout */
 .editor-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -59,21 +62,27 @@ textarea {
     line-height: 1.6;
 }
 
-/* Preview pane styling */
 #preview {
     line-height: 1.6;
 }
 
-#preview h1, #preview h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
-#preview code { background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 4px; }
+#preview h1, #preview h2 { 
+    border-bottom: 1px solid var(--border); 
+    padding-bottom: 0.3rem; 
+}
 
-/* Custom Scrollbar */
+#preview code { 
+    background: rgba(255,255,255,0.1); 
+    padding: 0.2rem 0.4rem; 
+    border-radius: 4px; 
+}
+
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-/* Download Button */
+
 .btn-download {
     background: var(--accent);
     color: var(--bg);
@@ -84,4 +93,6 @@ textarea {
     cursor: pointer;
     transition: 0.3s transform;
 }
-.btn-download:hover { transform: scale(1.05); }
+.btn-download:hover { 
+    transform: scale(1.05); 
+}
