@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Initial color */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 1s ease; /* Smooth color transition */
+}
+
+.clock-container {
+    text-align: center;
+}
+
+#clock {
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    /* This creates the high-level "Glow" effect */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+#date {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    #clock { font-size: 4rem; }
+}
