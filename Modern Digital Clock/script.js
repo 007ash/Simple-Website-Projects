@@ -17,7 +17,5 @@ function updateClock() {
     document.body.style.background = `hsl(${hue}, 50%, 10%)`;
 }
 
-
 setInterval(updateClock, 1000);
-
 updateClock();
