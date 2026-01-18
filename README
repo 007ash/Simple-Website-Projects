@@ -1,0 +1,17 @@
+
+# Simple Website Projects
+This repository contains a collection of simple website projects that demonstrate various web development concepts and techniques. Each project is designed to be easy to understand and modify, making them perfect for beginners looking to learn web development.
+
+## Projects Included
+1. **Interactive Calculator**: A basic calculator that performs addition, subtraction, multiplication, and division using HTML, CSS, and JavaScript.
+2. **To-Do List**: A simple to-do list application that allows users to add, delete, and mark tasks as completed.
+3. **Login Form**: A basic login form with validation using HTML5 and JavaScript.
+4. **Markdown Notepad**: A web-based notepad that allows users to write and save notes in Markdown format.
+5. **Mordern Digital Clock**: A stylish digital clock that displays the current time and updates every second.
+6. **Pomodoro Timer**: A productivity timer based on the Pomodoro Technique, allowing users to set work and break intervals.
+7. **Registration Form**: A user registration form with input validation and error messages.
+
+## Getting Started
+To get started with any of the projects, simply clone the repository and open the desired project folder in your web browser.
+
+```bashgit clone
